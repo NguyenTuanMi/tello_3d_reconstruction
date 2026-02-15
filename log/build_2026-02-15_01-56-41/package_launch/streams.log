@@ -1,0 +1,28 @@
+[0.988s] Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/build --no-deps symlink_data
+[1.324s] running develop
+[1.543s] running egg_info
+[1.543s] creating package_launch.egg-info
+[1.566s] writing package_launch.egg-info/PKG-INFO
+[1.568s] writing dependency_links to package_launch.egg-info/dependency_links.txt
+[1.568s] writing entry points to package_launch.egg-info/entry_points.txt
+[1.568s] writing requirements to package_launch.egg-info/requires.txt
+[1.568s] writing top-level names to package_launch.egg-info/top_level.txt
+[1.568s] writing manifest file 'package_launch.egg-info/SOURCES.txt'
+[1.623s] reading manifest file 'package_launch.egg-info/SOURCES.txt'
+[1.623s] writing manifest file 'package_launch.egg-info/SOURCES.txt'
+[1.650s] running build_ext
+[1.650s] Creating /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/lib/python3.12/site-packages/package-launch.egg-link (link to .)
+[1.651s] Installing cam2img script to /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/lib/package_launch
+[1.652s] 
+[1.652s] Installed /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch
+[1.652s] running symlink_data
+[1.653s] creating /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/ament_index
+[1.653s] creating /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/ament_index/resource_index
+[1.653s] creating /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/ament_index/resource_index/packages
+[1.653s] symbolically linking /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/resource/package_launch -> /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/ament_index/resource_index/packages
+[1.653s] symbolically linking /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/package.xml -> /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch
+[1.653s] creating /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/launch
+[1.653s] symbolically linking /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/launch/orb_realsense_stereo_launch.py -> /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/launch
+[1.653s] symbolically linking /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/launch/orb_realsense_stereo_inertial_launch.py -> /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/launch
+[1.653s] symbolically linking /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/launch/orb_realsense_rgbd_launch.py -> /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/launch
+[1.653s] symbolically linking /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/launch/orb_realsense_mono_launch.py -> /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/launch

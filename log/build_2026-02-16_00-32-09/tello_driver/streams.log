@@ -1,0 +1,97 @@
+[0.009s] Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver': AMENT_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver
+[0.061s] -- The C compiler identification is GNU 13.3.0
+[0.118s] -- The CXX compiler identification is GNU 13.3.0
+[0.133s] -- Detecting C compiler ABI info
+[0.218s] -- Detecting C compiler ABI info - done
+[0.228s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.228s] -- Detecting C compile features
+[0.229s] -- Detecting C compile features - done
+[0.237s] -- Detecting CXX compiler ABI info
+[0.329s] -- Detecting CXX compiler ABI info - done
+[0.342s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.342s] -- Detecting CXX compile features
+[0.342s] -- Detecting CXX compile features - done
+[0.345s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.487s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.562s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.670s] -- Found camera_calibration_parsers: 5.1.7 (/opt/ros/jazzy/share/camera_calibration_parsers/cmake)
+[0.711s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.725s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.741s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.760s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.840s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.843s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.917s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.939s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.964s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.115s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[1.117s] -- Found class_loader: 2.7.0 (/opt/ros/jazzy/share/class_loader/cmake)
+[1.127s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[1.144s] -- Found OpenCV: /usr (found version "4.6.0") 
+[1.146s] -- Found rclcpp_components: 28.1.16 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[1.177s] -- Found ros2_shared: 0.1.0 (/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/cmake)
+[1.179s] -- Found tello_msgs: 0.1.0 (/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/cmake)
+[1.373s] -- Configuring done (1.4s)
+[1.429s] -- Generating done (0.0s)
+[1.443s] -- Build files have been written to: /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver
+[1.455s] Invoked command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver' returned '0': AMENT_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver
+[1.455s] Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver': AMENT_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver -- -j12 -l12
+[1.517s] [ 13%] [32mBuilding CXX object CMakeFiles/tello_emulator.dir/src/tello_emulator.cpp.o[0m
+[1.517s] [ 18%] [32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/tello_driver_node.cpp.o[0m
+[1.517s] [ 22%] [32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/tello_socket.cpp.o[0m
+[1.518s] [ 27%] [32mBuilding CXX object CMakeFiles/tello_joy_node.dir/src/tello_joy_node.cpp.o[0m
+[1.518s] [ 31%] [32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/tello_driver_node.cpp.o[0m
+[1.519s] [ 40%] [32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/state_socket.cpp.o[0m
+[1.521s] [ 45%] [32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/command_socket.cpp.o[0m
+[1.521s] [ 45%] [32mBuilding CXX object CMakeFiles/tello_joy_main.dir/src/tello_joy_main.cpp.o[0m
+[1.522s] [ 45%] [32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/tello_driver_main.cpp.o[0m
+[1.523s] [ 45%] [32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/tello_socket.cpp.o[0m
+[1.524s] [ 50%] [32mBuilding CXX object CMakeFiles/tello_joy_main.dir/src/tello_joy_node.cpp.o[0m
+[1.536s] [ 54%] [32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/command_socket.cpp.o[0m
+[6.320s] [ 59%] [32m[1mLinking CXX executable tello_emulator[0m
+[6.621s] [ 59%] Built target tello_emulator
+[6.646s] [ 63%] [32mBuilding CXX object CMakeFiles/tello_driver_main.dir/src/video_socket.cpp.o[0m
+[8.635s] [ 68%] [32mBuilding CXX object CMakeFiles/tello_driver_main.dir/h264decoder/h264decoder.cpp.o[0m
+[9.931s] [ 72%] [32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/state_socket.cpp.o[0m
+[14.828s] [ 77%] [32mBuilding CXX object CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o[0m
+[15.218s] [ 81%] [32mBuilding CXX object CMakeFiles/tello_driver_node.dir/h264decoder/h264decoder.cpp.o[0m
+[20.279s] [ 86%] [32m[1mLinking CXX executable tello_joy_main[0m
+[20.780s] [ 90%] [32m[1mLinking CXX shared library libtello_joy_node.so[0m
+[20.890s] [ 90%] Built target tello_joy_main
+[21.303s] [ 90%] Built target tello_joy_node
+[26.368s] [ 95%] [32m[1mLinking CXX shared library libtello_driver_node.so[0m
+[26.402s] [100%] [32m[1mLinking CXX executable tello_driver_main[0m
+[27.274s] [100%] Built target tello_driver_node
+[27.770s] [100%] Built target tello_driver_main
+[27.781s] Invoked command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver' returned '0': AMENT_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver -- -j12 -l12
+[27.781s] Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver': AMENT_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver
+[27.788s] -- Install configuration: ""
+[27.788s] -- Execute custom install script
+[27.788s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/environment/library_path.sh
+[27.796s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/environment/library_path.dsv
+[27.805s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/lib/libtello_driver_node.so
+[27.813s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/lib/libtello_joy_node.so
+[27.820s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/lib/tello_driver/tello_driver_main
+[27.828s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/lib/tello_driver/tello_joy_main
+[27.835s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/lib/tello_driver/tello_emulator
+[27.843s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/cfg/camera_info.yaml
+[27.852s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/launch/emulator_launch.py
+[27.859s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/launch/emulators_launch.py
+[27.867s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/launch/teleop_launch.py
+[27.875s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/ament_index/resource_index/package_run_dependencies/tello_driver
+[27.889s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/ament_index/resource_index/parent_prefix_path/tello_driver
+[27.897s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/environment/ament_prefix_path.sh
+[27.906s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/environment/ament_prefix_path.dsv
+[27.914s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/environment/path.sh
+[27.923s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/environment/path.dsv
+[27.931s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/local_setup.bash
+[27.938s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/local_setup.sh
+[27.946s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/local_setup.zsh
+[27.954s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/local_setup.dsv
+[27.962s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/package.dsv
+[27.969s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/ament_index/resource_index/packages/tello_driver
+[27.978s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/ament_index/resource_index/rclcpp_components/tello_driver
+[27.985s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/cmake/tello_driverConfig.cmake
+[27.993s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/cmake/tello_driverConfig-version.cmake
+[28.001s] -- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/package.xml
+[28.011s] Invoked command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver' returned '0': AMENT_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver

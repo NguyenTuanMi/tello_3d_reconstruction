@@ -1,0 +1,1 @@
+/media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_driver/launch/emulator_launch.py

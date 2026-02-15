@@ -1,0 +1,1 @@
+/media/nguyen-tuan-minh/DATA/ros2_ws/build/ros2_shared/ament_cmake_core/ros2_sharedConfig-version.cmake

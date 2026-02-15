@@ -1,0 +1,60 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+-- Found message_filters: 4.11.9 (/opt/ros/jazzy/share/message_filters/cmake)
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL 
+-- Found ORB_SLAM3: /media/nguyen-tuan-minh/DATA/ORB_SLAM3/lib/libORB_SLAM3.so  
+-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+-- Found tf2_ros: 0.36.16 (/opt/ros/jazzy/share/tf2_ros/cmake)
+-- Configuring done (1.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /media/nguyen-tuan-minh/DATA/ros2_ws/build/orbslam3
+[  8%] [32mBuilding CXX object CMakeFiles/rgbd.dir/src/rgbd/rgbd-slam-node.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/mono.dir/src/monocular/mono.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/rgbd.dir/src/rgbd/rgbd.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/mono.dir/src/monocular/monocular-slam-node.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/stereo.dir/src/stereo/stereo-slam-node.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/stereo.dir/src/stereo/stereo.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/stereo-inertial.dir/src/stereo-inertial/stereo-inertial-node.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable mono[0m
+[ 75%] Built target mono
+[ 83%] [32m[1mLinking CXX executable stereo[0m
+[ 83%] Built target stereo
+[ 91%] [32m[1mLinking CXX executable rgbd[0m
+[100%] [32m[1mLinking CXX executable stereo-inertial[0m
+[100%] Built target rgbd
+[100%] Built target stereo-inertial
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/lib/orbslam3/mono
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/lib/orbslam3/rgbd
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/lib/orbslam3/stereo
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/lib/orbslam3/stereo-inertial
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/ament_index/resource_index/package_run_dependencies/orbslam3
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/ament_index/resource_index/parent_prefix_path/orbslam3
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/environment/ament_prefix_path.sh
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/environment/ament_prefix_path.dsv
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/environment/path.sh
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/environment/path.dsv
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/local_setup.bash
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/local_setup.sh
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/local_setup.zsh
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/local_setup.dsv
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/package.dsv
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/ament_index/resource_index/packages/orbslam3
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/cmake/orbslam3Config.cmake
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/cmake/orbslam3Config-version.cmake
+-- Symlinking: /media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/package.xml

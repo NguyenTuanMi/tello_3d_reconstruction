@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "tello_msgs/srv/TelloAction_Response",
+      "fields": [
+        {
+          "name": "rc",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "tello_msgs/srv/TelloAction_Response",
+      "hash_string": "RIHS01_d1eee12b0bc3785a870d3299835325c112ffc9c8cd0b4e48f8199772510dd252"
+    }
+  ]
+}

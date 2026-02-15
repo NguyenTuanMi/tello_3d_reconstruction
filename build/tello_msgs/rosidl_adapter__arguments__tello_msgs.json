@@ -1,0 +1,8 @@
+{
+  "package_name": "tello_msgs",
+  "non_idl_tuples": [
+    "/media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_msgs:msg/FlightData.msg",
+    "/media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_msgs:msg/TelloResponse.msg",
+    "/media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_msgs:srv/TelloAction.srv"
+  ]
+}

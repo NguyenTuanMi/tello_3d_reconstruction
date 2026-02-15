@@ -1,0 +1,27 @@
+running develop
+running egg_info
+creating package_launch.egg-info
+writing package_launch.egg-info/PKG-INFO
+writing dependency_links to package_launch.egg-info/dependency_links.txt
+writing entry points to package_launch.egg-info/entry_points.txt
+writing requirements to package_launch.egg-info/requires.txt
+writing top-level names to package_launch.egg-info/top_level.txt
+writing manifest file 'package_launch.egg-info/SOURCES.txt'
+reading manifest file 'package_launch.egg-info/SOURCES.txt'
+writing manifest file 'package_launch.egg-info/SOURCES.txt'
+running build_ext
+Creating /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/lib/python3.12/site-packages/package-launch.egg-link (link to .)
+Installing cam2img script to /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/lib/package_launch
+
+Installed /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch
+running symlink_data
+creating /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/ament_index
+creating /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/ament_index/resource_index
+creating /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/ament_index/resource_index/packages
+symbolically linking /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/resource/package_launch -> /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/ament_index/resource_index/packages
+symbolically linking /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/package.xml -> /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch
+creating /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/launch
+symbolically linking /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/launch/orb_realsense_stereo_launch.py -> /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/launch
+symbolically linking /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/launch/orb_realsense_stereo_inertial_launch.py -> /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/launch
+symbolically linking /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/launch/orb_realsense_rgbd_launch.py -> /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/launch
+symbolically linking /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/launch/orb_realsense_mono_launch.py -> /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/launch

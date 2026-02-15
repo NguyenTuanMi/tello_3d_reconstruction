@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs/rosidl_generator_py/tello_msgs/tello_msgs_s__rosidl_typesupport_c.so" "TARGETS" "tello_msgs_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/tello_msgs")

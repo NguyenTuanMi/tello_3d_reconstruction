@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing package_launch.egg-info/PKG-INFO
+writing dependency_links to package_launch.egg-info/dependency_links.txt
+writing entry points to package_launch.egg-info/entry_points.txt
+writing requirements to package_launch.egg-info/requires.txt
+writing top-level names to package_launch.egg-info/top_level.txt
+reading manifest file 'package_launch.egg-info/SOURCES.txt'
+writing manifest file 'package_launch.egg-info/SOURCES.txt'
+running build_ext
+Creating /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/lib/python3.12/site-packages/package-launch.egg-link (link to .)
+Installing cam2img script to /media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/lib/package_launch
+
+Installed /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch
+running symlink_data

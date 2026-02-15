@@ -1,0 +1,944 @@
+[0.098s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'ros2_shared', 'tello_description', 'tello_driver', 'tello_msgs', 'package_launch', 'orbslam3', '--event-handlers', 'console_direct+', '--symlink-install']
+[0.098s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=['console_direct+'], ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['ros2_shared', 'tello_description', 'tello_driver', 'tello_msgs', 'package_launch', 'orbslam3'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7690b8da03e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7690b8da00e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7690b8da00e0>>, mixin_verb=('build',))
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.132s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/media/nguyen-tuan-minh/DATA/ros2_ws'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/image_transport_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/image_transport_tutorials) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/image_transport_tutorials) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/image_transport_tutorials) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/image_transport_tutorials) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/image_transport_tutorials) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/image_transport_tutorials) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/image_transport_tutorials) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/image_transport_tutorials) by extension 'ros'
+[0.159s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ROS2_ORB-SLAM3_Odometry/image_transport_tutorials' with type 'ros.ament_cmake' and name 'image_transport_tutorials'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/orbslam3_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/orbslam3_ros2) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/orbslam3_ros2) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/orbslam3_ros2) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/orbslam3_ros2) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/orbslam3_ros2) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/orbslam3_ros2) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/orbslam3_ros2) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/orbslam3_ros2) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ROS2_ORB-SLAM3_Odometry/orbslam3_ros2' with type 'ros.ament_cmake' and name 'orbslam3'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/package_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/package_launch) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/package_launch) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/package_launch) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/package_launch) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/package_launch) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/package_launch) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/package_launch) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_ORB-SLAM3_Odometry/package_launch) by extension 'ros'
+[0.161s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ROS2_ORB-SLAM3_Odometry/package_launch' with type 'ros.ament_python' and name 'package_launch'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing/launch_testing_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing/launch_testing_examples) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing/launch_testing_examples) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing/launch_testing_examples) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing/launch_testing_examples) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing/launch_testing_examples) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing/launch_testing_examples) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing/launch_testing_examples) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/launch_testing/launch_testing_examples) by extension 'ros'
+[0.163s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/launch_testing/launch_testing_examples' with type 'ros.ament_python' and name 'launch_testing_examples'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_client) by extension 'ros'
+[0.166s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/actions/minimal_action_client' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_action_client'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/actions/minimal_action_server) by extension 'ros'
+[0.167s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/actions/minimal_action_server' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_action_server'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/composition/minimal_composition) by extension 'ros'
+[0.168s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/composition/minimal_composition' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_composition'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/cbg_executor) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/cbg_executor) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/cbg_executor) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/cbg_executor) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/cbg_executor) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/cbg_executor) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/cbg_executor) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/cbg_executor) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/cbg_executor) by extension 'ros'
+[0.170s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/executors/cbg_executor' with type 'ros.ament_cmake' and name 'examples_rclcpp_cbg_executor'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/executors/multithreaded_executor) by extension 'ros'
+[0.171s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/executors/multithreaded_executor' with type 'ros.ament_cmake' and name 'examples_rclcpp_multithreaded_executor'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/async_client) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/async_client) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/async_client) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/async_client) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/async_client) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/async_client) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/async_client) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/async_client) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/async_client) by extension 'ros'
+[0.172s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/services/async_client' with type 'ros.ament_cmake' and name 'examples_rclcpp_async_client'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_client) by extension 'ros'
+[0.173s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/services/minimal_client' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_client'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/services/minimal_service) by extension 'ros'
+[0.175s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/services/minimal_service' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_service'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extensions ['colcon_pkg']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'colcon_pkg'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extensions ['colcon_meta']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'colcon_meta'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extensions ['ros']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'ros'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extensions ['cmake', 'python']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'cmake'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'python'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extensions ['python_setup_py']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers) by extension 'python_setup_py'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/timers/minimal_timer) by extension 'ros'
+[0.176s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/timers/minimal_timer' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_timer'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'ros'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extensions ['cmake', 'python']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'cmake'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'python'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extensions ['python_setup_py']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics) by extension 'python_setup_py'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_publisher) by extension 'ros'
+[0.178s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/topics/minimal_publisher' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_publisher'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/topics/minimal_subscriber) by extension 'ros'
+[0.179s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/topics/minimal_subscriber' with type 'ros.ament_cmake' and name 'examples_rclcpp_minimal_subscriber'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/wait_set) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/wait_set) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/wait_set) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/wait_set) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/wait_set) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/wait_set) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/wait_set) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/wait_set) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclcpp/wait_set) by extension 'ros'
+[0.180s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclcpp/wait_set' with type 'ros.ament_cmake' and name 'examples_rclcpp_wait_set'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'ros'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extensions ['cmake', 'python']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'cmake'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'python'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extensions ['python_setup_py']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy) by extension 'python_setup_py'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'ros'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extensions ['cmake', 'python']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions) by extension 'python_setup_py'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_client) by extension 'ros'
+[0.182s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/actions/minimal_action_client' with type 'ros.ament_python' and name 'examples_rclpy_minimal_action_client'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/actions/minimal_action_server) by extension 'ros'
+[0.183s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/actions/minimal_action_server' with type 'ros.ament_python' and name 'examples_rclpy_minimal_action_server'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/executors) by extension 'ros'
+[0.184s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/executors' with type 'ros.ament_python' and name 'examples_rclpy_executors'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/guard_conditions) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/guard_conditions) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/guard_conditions) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/guard_conditions) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/guard_conditions) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/guard_conditions) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/guard_conditions) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/guard_conditions) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/guard_conditions) by extension 'ros'
+[0.185s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/guard_conditions' with type 'ros.ament_python' and name 'examples_rclpy_guard_conditions'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services) by extension 'python_setup_py'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_client) by extension 'ros'
+[0.186s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/services/minimal_client' with type 'ros.ament_python' and name 'examples_rclpy_minimal_client'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/services/minimal_service) by extension 'ros'
+[0.187s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/services/minimal_service' with type 'ros.ament_python' and name 'examples_rclpy_minimal_service'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'ros'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extensions ['cmake', 'python']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'cmake'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'python'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extensions ['python_setup_py']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics) by extension 'python_setup_py'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extension 'colcon_meta'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extensions ['ros']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_publisher) by extension 'ros'
+[0.189s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/topics/minimal_publisher' with type 'ros.ament_python' and name 'examples_rclpy_minimal_publisher'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/minimal_subscriber) by extension 'ros'
+[0.190s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/topics/minimal_subscriber' with type 'ros.ament_python' and name 'examples_rclpy_minimal_subscriber'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/pointcloud_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/pointcloud_publisher) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/pointcloud_publisher) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/pointcloud_publisher) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/pointcloud_publisher) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/pointcloud_publisher) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/pointcloud_publisher) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/pointcloud_publisher) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/examples/rclpy/topics/pointcloud_publisher) by extension 'ros'
+[0.190s] DEBUG:colcon.colcon_core.package_identification:Package 'src/examples/rclpy/topics/pointcloud_publisher' with type 'ros.ament_python' and name 'examples_rclpy_pointcloud_publisher'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'colcon_meta'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extensions ['ros']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_shared) by extension 'ros'
+[0.191s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_shared' with type 'ros.ament_cmake' and name 'ros2_shared'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['colcon_meta']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['ros']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'ros'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['cmake', 'python']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'cmake'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'python'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extensions ['python_setup_py']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros) by extension 'python_setup_py'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extensions ['colcon_meta']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extensions ['ros']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_description) by extension 'ros'
+[0.193s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tello_ros/tello_description' with type 'ros.ament_cmake' and name 'tello_description'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'ignore'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'ignore_ament_install'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extensions ['colcon_pkg']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'colcon_pkg'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'colcon_meta'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_driver) by extension 'ros'
+[0.194s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tello_ros/tello_driver' with type 'ros.ament_cmake' and name 'tello_driver'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_gazebo) by extension 'ros'
+[0.195s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tello_ros/tello_gazebo' with type 'ros.ament_cmake' and name 'tello_gazebo'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/tello_ros/tello_msgs) by extension 'ros'
+[0.196s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tello_ros/tello_msgs' with type 'ros.ament_cmake' and name 'tello_msgs'
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.214s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclcpp_async_client' in 'src/examples/rclcpp/services/async_client'
+[0.214s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclcpp_cbg_executor' in 'src/examples/rclcpp/executors/cbg_executor'
+[0.214s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclcpp_minimal_action_client' in 'src/examples/rclcpp/actions/minimal_action_client'
+[0.214s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclcpp_minimal_action_server' in 'src/examples/rclcpp/actions/minimal_action_server'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclcpp_minimal_client' in 'src/examples/rclcpp/services/minimal_client'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclcpp_minimal_composition' in 'src/examples/rclcpp/composition/minimal_composition'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclcpp_minimal_publisher' in 'src/examples/rclcpp/topics/minimal_publisher'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclcpp_minimal_service' in 'src/examples/rclcpp/services/minimal_service'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclcpp_minimal_subscriber' in 'src/examples/rclcpp/topics/minimal_subscriber'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclcpp_minimal_timer' in 'src/examples/rclcpp/timers/minimal_timer'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclcpp_multithreaded_executor' in 'src/examples/rclcpp/executors/multithreaded_executor'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclcpp_wait_set' in 'src/examples/rclcpp/wait_set'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclpy_executors' in 'src/examples/rclpy/executors'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclpy_guard_conditions' in 'src/examples/rclpy/guard_conditions'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclpy_minimal_action_client' in 'src/examples/rclpy/actions/minimal_action_client'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclpy_minimal_action_server' in 'src/examples/rclpy/actions/minimal_action_server'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclpy_minimal_client' in 'src/examples/rclpy/services/minimal_client'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclpy_minimal_publisher' in 'src/examples/rclpy/topics/minimal_publisher'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclpy_minimal_service' in 'src/examples/rclpy/services/minimal_service'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclpy_minimal_subscriber' in 'src/examples/rclpy/topics/minimal_subscriber'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'examples_rclpy_pointcloud_publisher' in 'src/examples/rclpy/topics/pointcloud_publisher'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'image_transport_tutorials' in 'src/ROS2_ORB-SLAM3_Odometry/image_transport_tutorials'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'launch_testing_examples' in 'src/examples/launch_testing/launch_testing_examples'
+[0.215s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'tello_gazebo' in 'src/tello_ros/tello_gazebo'
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.218s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 293 installed packages in /opt/ros/jazzy
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'orbslam3' build argument 'cmake_args' from command line to 'None'
+[0.258s] Level 5:colcon.colcon_core.verb:set package 'orbslam3' build argument 'cmake_target' from command line to 'None'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'orbslam3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'orbslam3' build argument 'cmake_clean_cache' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'orbslam3' build argument 'cmake_clean_first' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'orbslam3' build argument 'cmake_force_configure' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'orbslam3' build argument 'ament_cmake_args' from command line to 'None'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'orbslam3' build argument 'catkin_cmake_args' from command line to 'None'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'orbslam3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.259s] DEBUG:colcon.colcon_core.verb:Building package 'orbslam3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/nguyen-tuan-minh/DATA/ros2_ws/build/orbslam3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3', 'merge_install': False, 'path': '/media/nguyen-tuan-minh/DATA/ros2_ws/src/ROS2_ORB-SLAM3_Odometry/orbslam3_ros2', 'symlink_install': True, 'test_result_base': None}
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'package_launch' build argument 'cmake_args' from command line to 'None'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'package_launch' build argument 'cmake_target' from command line to 'None'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'package_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'package_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'package_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'package_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'package_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'package_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'package_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.259s] DEBUG:colcon.colcon_core.verb:Building package 'package_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch', 'merge_install': False, 'path': '/media/nguyen-tuan-minh/DATA/ros2_ws/src/ROS2_ORB-SLAM3_Odometry/package_launch', 'symlink_install': True, 'test_result_base': None}
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_args' from command line to 'None'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_target' from command line to 'None'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_clean_cache' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_clean_first' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'cmake_force_configure' from command line to 'False'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'ament_cmake_args' from command line to 'None'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'catkin_cmake_args' from command line to 'None'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'ros2_shared' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.260s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_shared' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/nguyen-tuan-minh/DATA/ros2_ws/build/ros2_shared', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared', 'merge_install': False, 'path': '/media/nguyen-tuan-minh/DATA/ros2_ws/src/ros2_shared', 'symlink_install': True, 'test_result_base': None}
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_args' from command line to 'None'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_target' from command line to 'None'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.260s] DEBUG:colcon.colcon_core.verb:Building package 'tello_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description', 'merge_install': False, 'path': '/media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_description', 'symlink_install': True, 'test_result_base': None}
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_args' from command line to 'None'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_target' from command line to 'None'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.260s] Level 5:colcon.colcon_core.verb:set package 'tello_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.260s] DEBUG:colcon.colcon_core.verb:Building package 'tello_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs', 'merge_install': False, 'path': '/media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.261s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_args' from command line to 'None'
+[0.261s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_target' from command line to 'None'
+[0.261s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.261s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.261s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.261s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.261s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.261s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.261s] Level 5:colcon.colcon_core.verb:set package 'tello_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.261s] DEBUG:colcon.colcon_core.verb:Building package 'tello_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver', 'merge_install': False, 'path': '/media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_driver', 'symlink_install': True, 'test_result_base': None}
+[0.261s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.262s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.262s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/nguyen-tuan-minh/DATA/ros2_ws/src/ros2_shared' with build type 'ament_cmake'
+[0.262s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/nguyen-tuan-minh/DATA/ros2_ws/src/ros2_shared'
+[0.263s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.263s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.263s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.266s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_msgs' with build type 'ament_cmake'
+[0.266s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_msgs'
+[0.266s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.266s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.269s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/nguyen-tuan-minh/DATA/ros2_ws/src/ROS2_ORB-SLAM3_Odometry/orbslam3_ros2' with build type 'ament_cmake'
+[0.269s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/nguyen-tuan-minh/DATA/ros2_ws/src/ROS2_ORB-SLAM3_Odometry/orbslam3_ros2'
+[0.270s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.270s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.272s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/media/nguyen-tuan-minh/DATA/ros2_ws/src/ROS2_ORB-SLAM3_Odometry/package_launch' with build type 'ament_python'
+[0.272s] Level 1:colcon.colcon_core.shell:create_environment_hook('package_launch', 'ament_prefix_path')
+[0.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/hook/ament_prefix_path.ps1'
+[0.273s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/hook/ament_prefix_path.dsv'
+[0.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/hook/ament_prefix_path.sh'
+[0.274s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.274s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.277s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_description' with build type 'ament_cmake'
+[0.277s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_description'
+[0.277s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.277s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.286s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/ros2_shared': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/nguyen-tuan-minh/DATA/ros2_ws/build/ros2_shared -- -j12 -l12
+[0.288s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs -- -j12 -l12
+[0.290s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/orbslam3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/nguyen-tuan-minh/DATA/ros2_ws/build/orbslam3 -- -j12 -l12
+[0.559s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/media/nguyen-tuan-minh/DATA/ros2_ws/src/ROS2_ORB-SLAM3_Odometry/package_launch'
+[0.560s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.560s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.568s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/nguyen-tuan-minh/DATA/ros2_ws/build/ros2_shared -- -j12 -l12
+[0.576s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/ros2_shared': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/nguyen-tuan-minh/DATA/ros2_ws/build/ros2_shared
+[0.578s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_description -- -j12 -l12
+[0.579s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/orbslam3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/nguyen-tuan-minh/DATA/ros2_ws/build/orbslam3 -- -j12 -l12
+[0.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/orbslam3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/nguyen-tuan-minh/DATA/ros2_ws/build/orbslam3
+[0.602s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_shared)
+[0.603s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/nguyen-tuan-minh/DATA/ros2_ws/build/ros2_shared
+[0.606s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared' for CMake module files
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared' for CMake config files
+[0.608s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_shared', 'cmake_prefix_path')
+[0.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.ps1'
+[0.609s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.dsv'
+[0.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.sh'
+[0.610s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/bin'
+[0.610s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/lib/pkgconfig/ros2_shared.pc'
+[0.610s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/lib/python3.12/site-packages'
+[0.611s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/bin'
+[0.611s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/package.ps1'
+[0.612s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/package.dsv'
+[0.615s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/package.sh'
+[0.616s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/package.bash'
+[0.617s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/package.zsh'
+[0.618s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/colcon-core/packages/ros2_shared)
+[0.619s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_shared)
+[0.619s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared' for CMake module files
+[0.620s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared' for CMake config files
+[0.620s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_shared', 'cmake_prefix_path')
+[0.621s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.ps1'
+[0.621s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.dsv'
+[0.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/hook/cmake_prefix_path.sh'
+[0.622s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/bin'
+[0.623s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/lib/pkgconfig/ros2_shared.pc'
+[0.623s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/lib/python3.12/site-packages'
+[0.624s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/bin'
+[0.624s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/package.ps1'
+[0.625s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/package.dsv'
+[0.625s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/package.sh'
+[0.626s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/package.bash'
+[0.626s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/ros2_shared/package.zsh'
+[0.627s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared/share/colcon-core/packages/ros2_shared)
+[0.629s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orbslam3)
+[0.629s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3' for CMake module files
+[0.630s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/orbslam3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/nguyen-tuan-minh/DATA/ros2_ws/build/orbslam3
+[0.632s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3' for CMake config files
+[0.633s] Level 1:colcon.colcon_core.shell:create_environment_hook('orbslam3', 'cmake_prefix_path')
+[0.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/hook/cmake_prefix_path.ps1'
+[0.633s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/hook/cmake_prefix_path.dsv'
+[0.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/hook/cmake_prefix_path.sh'
+[0.639s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/lib'
+[0.639s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/bin'
+[0.639s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/lib/pkgconfig/orbslam3.pc'
+[0.640s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/lib/python3.12/site-packages'
+[0.641s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/bin'
+[0.641s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/package.ps1'
+[0.642s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/package.dsv'
+[0.643s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/package.sh'
+[0.644s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/package.bash'
+[0.644s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/package.zsh'
+[0.645s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/colcon-core/packages/orbslam3)
+[0.645s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(orbslam3)
+[0.645s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3' for CMake module files
+[0.646s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3' for CMake config files
+[0.647s] Level 1:colcon.colcon_core.shell:create_environment_hook('orbslam3', 'cmake_prefix_path')
+[0.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/hook/cmake_prefix_path.ps1'
+[0.647s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/hook/cmake_prefix_path.dsv'
+[0.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/hook/cmake_prefix_path.sh'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/lib'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/bin'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/lib/pkgconfig/orbslam3.pc'
+[0.649s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/lib/python3.12/site-packages'
+[0.650s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/bin'
+[0.650s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/package.ps1'
+[0.651s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/package.dsv'
+[0.652s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/package.sh'
+[0.653s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/package.bash'
+[0.653s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/orbslam3/package.zsh'
+[0.654s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/nguyen-tuan-minh/DATA/ros2_ws/install/orbslam3/share/colcon-core/packages/orbslam3)
+[0.655s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_description -- -j12 -l12
+[0.657s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_description
+[0.681s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_description)
+[0.681s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description' for CMake module files
+[0.682s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_description
+[0.682s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description' for CMake config files
+[0.683s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_description', 'cmake_prefix_path')
+[0.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/hook/cmake_prefix_path.ps1'
+[0.684s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/hook/cmake_prefix_path.dsv'
+[0.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/hook/cmake_prefix_path.sh'
+[0.684s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/bin'
+[0.685s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/lib/pkgconfig/tello_description.pc'
+[0.685s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/lib/python3.12/site-packages'
+[0.685s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/bin'
+[0.686s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/package.ps1'
+[0.686s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/package.dsv'
+[0.687s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/package.sh'
+[0.687s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/package.bash'
+[0.688s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/package.zsh'
+[0.688s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/colcon-core/packages/tello_description)
+[0.689s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_description)
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description' for CMake module files
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description' for CMake config files
+[0.690s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_description', 'cmake_prefix_path')
+[0.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/hook/cmake_prefix_path.ps1'
+[0.690s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/hook/cmake_prefix_path.dsv'
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/hook/cmake_prefix_path.sh'
+[0.691s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/bin'
+[0.691s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/lib/pkgconfig/tello_description.pc'
+[0.691s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/lib/python3.12/site-packages'
+[0.692s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/bin'
+[0.692s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/package.ps1'
+[0.692s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/package.dsv'
+[0.693s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/package.sh'
+[0.693s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/package.bash'
+[0.694s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/tello_description/package.zsh'
+[0.694s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_description/share/colcon-core/packages/tello_description)
+[0.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs -- -j12 -l12
+[0.769s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs
+[0.854s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_msgs)
+[0.854s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs' for CMake module files
+[0.855s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs' for CMake config files
+[0.856s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_msgs', 'cmake_prefix_path')
+[0.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.ps1'
+[0.857s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.dsv'
+[0.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.sh'
+[0.858s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib'
+[0.858s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_msgs', 'ld_library_path_lib')
+[0.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.ps1'
+[0.858s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.dsv'
+[0.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.sh'
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/bin'
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib/pkgconfig/tello_msgs.pc'
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib/python3.12/site-packages'
+[0.859s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_msgs', 'pythonpath')
+[0.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/pythonpath.ps1'
+[0.860s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/pythonpath.dsv'
+[0.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/pythonpath.sh'
+[0.861s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/bin'
+[0.861s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/package.ps1'
+[0.861s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/package.dsv'
+[0.862s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/package.sh'
+[0.862s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/package.bash'
+[0.863s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/package.zsh'
+[0.863s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/colcon-core/packages/tello_msgs)
+[0.863s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_msgs)
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs' for CMake module files
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs' for CMake config files
+[0.865s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_msgs', 'cmake_prefix_path')
+[0.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.ps1'
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.dsv'
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/cmake_prefix_path.sh'
+[0.866s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib'
+[0.866s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_msgs', 'ld_library_path_lib')
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.ps1'
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.dsv'
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/ld_library_path_lib.sh'
+[0.867s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/bin'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib/pkgconfig/tello_msgs.pc'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib/python3.12/site-packages'
+[0.868s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_msgs', 'pythonpath')
+[0.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/pythonpath.ps1'
+[0.868s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/pythonpath.dsv'
+[0.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/hook/pythonpath.sh'
+[0.869s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/bin'
+[0.870s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/package.ps1'
+[0.870s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/package.dsv'
+[0.871s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/package.sh'
+[0.871s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/package.bash'
+[0.872s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/tello_msgs/package.zsh'
+[0.872s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/share/colcon-core/packages/tello_msgs)
+[0.872s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_driver' with build type 'ament_cmake'
+[0.873s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/nguyen-tuan-minh/DATA/ros2_ws/src/tello_ros/tello_driver'
+[0.873s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.873s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.882s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver': AMENT_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver -- -j12 -l12
+[1.301s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/build --no-deps symlink_data
+[2.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('package_launch', 'pythonpath_develop')
+[2.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/share/package_launch/hook/pythonpath_develop.ps1'
+[2.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/build --no-deps symlink_data
+[2.083s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/share/package_launch/hook/pythonpath_develop.dsv'
+[2.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/share/package_launch/hook/pythonpath_develop.sh'
+[2.084s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch' for CMake module files
+[2.085s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch' for CMake config files
+[2.086s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/lib'
+[2.086s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/bin'
+[2.086s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/lib/pkgconfig/package_launch.pc'
+[2.087s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/lib/python3.12/site-packages'
+[2.087s] Level 1:colcon.colcon_core.shell:create_environment_hook('package_launch', 'pythonpath')
+[2.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/hook/pythonpath.ps1'
+[2.088s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/hook/pythonpath.dsv'
+[2.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/hook/pythonpath.sh'
+[2.089s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/bin'
+[2.089s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(package_launch)
+[2.090s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/package.ps1'
+[2.090s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/package.dsv'
+[2.091s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/package.sh'
+[2.092s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/package.bash'
+[2.092s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/package_launch/package.zsh'
+[2.093s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/nguyen-tuan-minh/DATA/ros2_ws/install/package_launch/share/colcon-core/packages/package_launch)
+[15.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver' returned '0': AMENT_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver -- -j12 -l12
+[15.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver': AMENT_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver
+[15.896s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_driver)
+[15.897s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver' for CMake module files
+[15.897s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver' returned '0': AMENT_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs:/media/nguyen-tuan-minh/DATA/ros2_ws/install/ros2_shared:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver
+[15.898s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver' for CMake config files
+[15.898s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_driver', 'cmake_prefix_path')
+[15.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/hook/cmake_prefix_path.ps1'
+[15.899s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/hook/cmake_prefix_path.dsv'
+[15.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/hook/cmake_prefix_path.sh'
+[15.900s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/lib'
+[15.900s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_driver', 'ld_library_path_lib')
+[15.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/hook/ld_library_path_lib.ps1'
+[15.900s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/hook/ld_library_path_lib.dsv'
+[15.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/hook/ld_library_path_lib.sh'
+[15.901s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/bin'
+[15.901s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/lib/pkgconfig/tello_driver.pc'
+[15.901s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/lib/python3.12/site-packages'
+[15.902s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/bin'
+[15.902s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/package.ps1'
+[15.902s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/package.dsv'
+[15.903s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/package.sh'
+[15.903s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/package.bash'
+[15.903s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/package.zsh'
+[15.904s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/colcon-core/packages/tello_driver)
+[15.904s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tello_driver)
+[15.904s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver' for CMake module files
+[15.905s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver' for CMake config files
+[15.905s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_driver', 'cmake_prefix_path')
+[15.905s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/hook/cmake_prefix_path.ps1'
+[15.905s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/hook/cmake_prefix_path.dsv'
+[15.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/hook/cmake_prefix_path.sh'
+[15.906s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/lib'
+[15.906s] Level 1:colcon.colcon_core.shell:create_environment_hook('tello_driver', 'ld_library_path_lib')
+[15.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/hook/ld_library_path_lib.ps1'
+[15.907s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/hook/ld_library_path_lib.dsv'
+[15.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/hook/ld_library_path_lib.sh'
+[15.907s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/bin'
+[15.907s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/lib/pkgconfig/tello_driver.pc'
+[15.908s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/lib/python3.12/site-packages'
+[15.908s] Level 1:colcon.colcon_core.environment:checking '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/bin'
+[15.908s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/package.ps1'
+[15.909s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/package.dsv'
+[15.909s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/package.sh'
+[15.909s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/package.bash'
+[15.910s] INFO:colcon.colcon_core.shell:Creating package script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/tello_driver/package.zsh'
+[15.910s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/nguyen-tuan-minh/DATA/ros2_ws/install/tello_driver/share/colcon-core/packages/tello_driver)
+[15.910s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.910s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.910s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[15.910s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[15.917s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[15.917s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[15.917s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[15.931s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[15.931s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/local_setup.ps1'
+[15.932s] INFO:colcon.colcon_core.shell:Creating prefix util module '/media/nguyen-tuan-minh/DATA/ros2_ws/install/_local_setup_util_ps1.py'
+[15.933s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/setup.ps1'
+[15.933s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/local_setup.sh'
+[15.934s] INFO:colcon.colcon_core.shell:Creating prefix util module '/media/nguyen-tuan-minh/DATA/ros2_ws/install/_local_setup_util_sh.py'
+[15.934s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/setup.sh'
+[15.935s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/local_setup.bash'
+[15.935s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/setup.bash'
+[15.936s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/local_setup.zsh'
+[15.936s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/nguyen-tuan-minh/DATA/ros2_ws/install/setup.zsh'

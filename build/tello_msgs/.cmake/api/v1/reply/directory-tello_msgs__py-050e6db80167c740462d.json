@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "tello_msgs__py",
+		"source" : "/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs/tello_msgs__py"
+	}
+}

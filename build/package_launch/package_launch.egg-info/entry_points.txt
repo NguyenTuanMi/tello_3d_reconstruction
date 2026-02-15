@@ -1,0 +1,2 @@
+[console_scripts]
+cam2img = package_launch.image_pub:main

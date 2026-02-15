@@ -1,0 +1,1 @@
+/media/nguyen-tuan-minh/DATA/ros2_ws/build/package_launch/launch/orb_realsense_mono_launch.py

@@ -1,0 +1,14 @@
+{
+  "package_name": "tello_msgs",
+  "output_dir": "/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs/rosidl_generator_type_description/tello_msgs",
+  "idl_tuples": [
+    "/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs/rosidl_adapter/tello_msgs:msg/FlightData.idl",
+    "/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs/rosidl_adapter/tello_msgs:msg/TelloResponse.idl",
+    "/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs/rosidl_adapter/tello_msgs:srv/TelloAction.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

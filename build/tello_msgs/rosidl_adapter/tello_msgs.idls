@@ -1,0 +1,3 @@
+/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs/rosidl_adapter/tello_msgs:msg/FlightData.idl
+/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs/rosidl_adapter/tello_msgs:msg/TelloResponse.idl
+/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_msgs/rosidl_adapter/tello_msgs:srv/TelloAction.idl

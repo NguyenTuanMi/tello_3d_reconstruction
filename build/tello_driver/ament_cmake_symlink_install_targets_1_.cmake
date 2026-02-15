@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver/tello_driver_main" "/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver/tello_joy_main" "/media/nguyen-tuan-minh/DATA/ros2_ws/build/tello_driver/tello_emulator" "TARGETS" "tello_driver_main" "tello_joy_main" "tello_emulator" "DESTINATION" "lib/tello_driver")
